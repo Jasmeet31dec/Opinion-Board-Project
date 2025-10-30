@@ -92,6 +92,4 @@ To scale the frontend-backend integration for production:
 - Use environment-based configuration for flexible deployment
 ```
 
----
 
-Let me know if you'd like help customizing the `.env` setup, adding deployment instructions, or inserting screenshots. You're almost there!
