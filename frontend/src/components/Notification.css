@@ -1,0 +1,102 @@
+@keyframes slideInDownFade {
+    0% { 
+        transform: translateY(-100%) translateX(-50%); 
+        opacity: 0; 
+    }
+    100% { 
+        transform: translateY(0) translateX(-50%); 
+        opacity: 1; 
+    }
+}
+
+@keyframes slideOutUpFade {
+    0% { 
+        transform: translateY(0) translateX(-50%); 
+        opacity: 1; 
+    }
+    100% { 
+        transform: translateY(-100%) translateX(-50%); 
+        opacity: 0; 
+    }
+}
+
+.animate-slide-in { 
+    animation: slideInDownFade 0.5s ease-out forwards; 
+}
+.animate-slide-out { 
+    animation: slideOutUpFade 0.5s ease-in forwards; 
+}
+
+/* Using unique class name .gn-notification-bar */
+.gn-notification-bar { 
+    --custom-bg: #f9f7f3; 
+    --custom-heading: #2e2223; 
+    --custom-button: #fd9217; 
+    
+    position: fixed; 
+    top: 1rem; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    z-index: 9999; /* High z-index to ensure it's on top */
+    display: flex; 
+    align-items: center; 
+    gap: 0.75rem; 
+    padding: 1rem; 
+    border-radius: 0.5rem; 
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); 
+    background-color: var(--custom-bg); 
+    color: var(--custom-heading); 
+    border: 1px solid var(--custom-button); 
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+}
+
+.gn-notification-bar__icon { 
+    height: 1.5rem; 
+    width: 1.5rem; 
+    flex-shrink: 0; 
+    color: var(--custom-button); 
+}
+
+.gn-notification-bar__content { 
+    margin: 0; 
+    padding: 0; 
+}
+
+.gn-notification-bar__title { 
+    font-weight: 600; 
+    font-size: 1.125rem; 
+    display: block; 
+}
+
+.gn-notification-bar__message { 
+    font-size: 0.875rem; 
+    font-weight: 400; 
+    display: block; 
+}
+
+.gn-notification-bar__dismiss { 
+    margin-left: 1rem; 
+    color: var(--custom-heading); 
+    background: none; 
+    border: none; 
+    cursor: pointer; 
+    border-radius: 9999px; 
+    padding: 0.25rem; 
+    transition: color 0.3s ease; 
+}
+
+.gn-notification-bar__dismiss:hover { 
+    color: var(--custom-button); 
+}
+
+.gn-notification-bar__dismiss:focus { 
+    outline: none; 
+    box-shadow: 0 0 0 2px var(--custom-button); 
+}
+
+.gn-notification-bar__dismiss-icon { 
+    height: 1.25rem; 
+    width: 1.25rem; 
+    stroke: currentColor; 
+}
+

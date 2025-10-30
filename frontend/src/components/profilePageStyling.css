@@ -1,0 +1,49 @@
+.profile-page-container {
+  background-color: #f7f3ee;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  position: relative; /* For positioning the back button */
+}
+
+.profile-title {
+  font-size: 2.25rem;
+  color: #2e2923;
+  border-bottom: 1px solid #e9e5de;
+  padding-bottom: 1rem;
+  margin-top: 0;
+  text-align: center; /* Center title since back button is positioned absolutely */
+  padding-left: 3rem; /* Make space for back button */
+  padding-right: 3rem; /* Balance padding */
+}
+
+.profile-stats-container {
+  display: flex;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+.stat-card {
+  flex: 1;
+  background-color: #fcfcfc;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+.stat-value {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fd9217; /* Orange accent */
+}
+.stat-label {
+  font-size: 1rem;
+  color: #777;
+}
+
+.no-opinions-message {
+  color: #777;
+  text-align: center;
+  padding: 2rem;
+  font-style: italic;
+}
