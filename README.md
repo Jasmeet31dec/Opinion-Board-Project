@@ -90,6 +90,3 @@ To scale the frontend-backend integration for production:
 - Optimize MongoDB with indexing and query tuning
 - Implement rate limiting and input validation to protect against abuse
 - Use environment-based configuration for flexible deployment
-```
-
-
